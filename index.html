@@ -13,9 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,11 +24,10 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
+
 <body>
-
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ <!-- Primary Page Layout–-->
 
 
 <header>
@@ -55,10 +51,23 @@
           <h2>- Nothing is impossible, the word itself says “I’m possible”! -- Audrey Hepburn -</h2>
           <h4>Hello! I am Chai.Narukulla and am 34 years old software developer. 
               I live in Seattle, Washington with my two dogs Angel and Winne.</h4>
-          <a href="#" class="btn">Hire me</a> 
+          
         </div>
       </div>
-      
+      <a onclick="getToKnowMe()" class="btn">Get Know Me Game</a> 
+      <a onclick="guessTheNumber()" class="btn">Guess My Number</a> 
+      <div id="guessGameBlock">
+        <h3 style="text-align:center">Guess The Number</h3> 
+          <p>We have selected a random number between 1 - 10.  
+          See if you can guess it.</p> 
+    
+        <div class="form"> 
+            <label for="guessField">Enter a guess: </label> 
+            <input type = "number" id = "guessField" class = "guessField"> 
+            <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
+        </div> 
+     </div>
+
       <section class="services">
         <div class="row">
           <div class="twelve columns"></div>
@@ -66,20 +75,24 @@
 
         <div class="row">
           <div class="one-half column">
+            <ul>
               <h4>Accomplishments</h4>
               <span class="fa fa-picture-o"></span>
-              <p>Graduated high school with Honors</p>
-              <p>Associates of the Arts from Seattle Center College.</p>
-              <p>Graduated from University of Washington </p>
-              <p>Graduated from Codefellows </p>
+              <li>Graduated high school with Honors</li>
+              <li>Associates of the Arts from Seattle Center College.</li>
+              <li>Graduated from University of Washington </li>
+              <li>Graduated from Codefellows </li>
+            </ul>
           </div>
            <div class="one-half column">
+             <ul>
               <h4>Work Experience</h4>
-              <p>Multi unit operation manager at Seatac Airport</p>
-              <p>Event manager at Washington State convention Center</p>
-              <p>Casino Pit Boss</p>
-              <p>U.S.Navy</p>
+              <li>Multi unit operation manager at Seatac Airport</li>
+              <li>Event manager at Washington State convention Center</li>
+              <li>Casino Pit Boss</li>
+              <li>U.S.Navy</li>
               <span class="fa fa-leaf"></span>
+            </ul>
           </div>
         </div><!--end of .row-->
       </section>
@@ -88,6 +101,7 @@
 </header>
   
   <!--ABOUT-->
+  <main>
   <section class="about">
     <div class="container">
         <div class="row">
@@ -135,4 +149,8 @@
 
     </div><!--end of .container-->
   </section>
+  </main>
+  <script src="js/app.js"></script>
+  </body>
+
   

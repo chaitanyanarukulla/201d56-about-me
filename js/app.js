@@ -1,5 +1,5 @@
 'use strict'
-
+function getToKnowMe() {
 var userName = prompt('What is your name')
 
 var myCity = prompt(userName + ' do you belive i am from Seattle');
@@ -87,3 +87,52 @@ else{
     console.log('You have to answer with yes and no');
     alert('You have to answer with yes and no');
 }
+}
+
+
+ // random value generated 
+ var randomNumber = Math.floor(Math.random() * 10 + 1); 
+ console.log('random number',randomNumber);
+      
+ // counting the number of guesses 
+ var guess = 0;
+   
+ document.getElementById("submitguess").onclick = function(){ 
+   
+    // number guessed by user      
+    var userGuessedNumber = document.getElementById("guessField").value; 
+    console.log('user guessednumber'+userGuessedNumber);
+
+    while(guess < 4){
+        if(randomNumber === userGuessedNumber) 
+        {     
+            prompt("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "+ guess + " GUESS "); 
+            break;
+        } else if(randomNumber < userGuessedNumber) {/* if guessed number is greater 
+                        than actual number*/  
+            console.log('this is the random number',randomNumber); 
+            prompt("OOPS SORRY!! TRY A SMALLER NUMBER");
+            guess++;  
+        } else if(randomNumber > userGuessedNumber){ /* if guessed number is Smaller 
+        than actual number*/  
+            prompt("OOPS SORRY!! TRY A GREATER NUMBER");
+            guess++;  
+        } 
+    }
+
+    
+    if(guess === 4){/* if number of tries is = 4 */ 
+        alert('you failed to guess my number in 4 tryes');
+    }
+    
+}
+
+
+function guessTheNumber() {
+    var guessGameB = document.getElementById("guessGameBlock");
+    if (guessGameB.style.display === "none") {
+        guessGameB.style.display = "block";
+    } else {
+        guessGameB.style.display = "none";
+    }
+  }
