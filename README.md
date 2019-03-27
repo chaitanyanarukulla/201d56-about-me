@@ -29,6 +29,8 @@ https://github.com/chaitanyanarukulla/201d56-about-me
 
 ## Contributing
 
+Most of my HTML and CSS was downloded from http://getskeleton.com/ for basic markup
+
 Codefellows T.A's
  
 
@@ -42,5 +44,7 @@ Codefellows T.A's
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
+
+* http://getskeleton.com/ for opensource free html and css div templets
 
 * Hat tip to anyone whose code was used
