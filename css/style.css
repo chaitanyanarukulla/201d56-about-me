@@ -1,0 +1,85 @@
+ 
+  html {
+    padding: 10%;
+    margin: 10%;
+  }
+  
+  
+  body {
+    background-image: url('img/background.jpg');
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(33, 113, 242), rgb(232, 240, 255));
+    /* Standard syntax */
+    text-align: center;
+    m
+
+  
+  }
+  
+  h1 {
+    font-size: 2em;
+    font-family: Impact, Cursive, sans-serif;
+    padding:2%;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-family: Impact, sans-serif, cursive;
+    padding:2%;
+  }
+  
+  #firstPara {
+    font-size: 27px;
+  }
+  
+  
+  p {
+    font-size: 40px;
+    padding:2%;
+  }
+  
+  ul li {
+    padding:2%;
+    font-size: 2em;
+    padding: 0 40px;
+    text-transform: none;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  .accomplish {
+    text-align: center;
+    font-family: fantasy, sans-serif, Impact;
+  }
+  
+  #accomplsh {
+    font-size: 30px;
+    font-family: Impact, sans-serif, cursive;
+  }
+  
+  #lastPara {
+    font-size: 25px;
+  }
+  
+  footer ul {
+    font-size: 10px;
+    font-style: italic;
+  }
+  
+  #order {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 25px;
+  }
