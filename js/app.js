@@ -1,12 +1,14 @@
 'use strict'
 
-var myCity = prompt('Do you belive i am from Seattle');
+var userName = prompt('What is your name')
 
-if(myCity ==='yes' || myCity === 'Yes' || myCity === 'y' || myCity === 'Y'){
+var myCity = prompt(userName + ' do you belive i am from Seattle');
+
+if(myCity ==='yes' || myCity === 'Yes' || myCity === 'y' || myCity === 'Y' || myCity === 'YES'){
     alert('You gussed it right');
     console.log('You gussed it right');
 }
-else if(myCity ==='no' || myCity === 'No'|| myCity === 'n' || myCity === 'N'){
+else if(myCity ==='no' || myCity === 'No'|| myCity === 'n' || myCity === 'N' || myCity === 'NO'){
     alert('You gussed it wrong');
     console.log('You gussed it wrong');
 }
@@ -17,7 +19,7 @@ else{
 
 
 
-var myPreJob = prompt('Do you belive I fixed Airplanes fro my previous Job');
+var myPreJob = prompt(userName + ' do you belive I fixed Airplanes fro my previous Job');
 
 if(myPreJob ==='yes' || myPreJob === 'Yes' || myPreJob=== 'y' || myPreJob === 'Y'){
     alert('You got it right , I was a aircraft machanic in the Navy');
@@ -34,7 +36,7 @@ else{
 
 
 
-var mySport = prompt('Do you think i play soccer').toUpperCase();;
+var mySport = prompt(userName + ' do you think i play soccer').toUpperCase();;
 
 if(mySport==='YES' || mySport === 'Y'){
     alert('You gussed it right');
@@ -51,7 +53,7 @@ else{
 
 
 
-var myVetran = prompt('Do you think i am a Vetren');
+var myVetran = prompt(userName + ' do you think i am a Vetren');
 var myVetranLo = myVetran.toLowerCase();
 
 if(myVetranLo === 'yes' || myVetranLo === 'y'){
@@ -70,7 +72,7 @@ else{
 
 
 
-var myFavFood = prompt('Do you think i like Pho');
+var myFavFood = prompt(userName + 'do you think i like Pho');
 var myFavFoodLo = myFavFood.toLowerCase();
 
 if(myFavFoodLo === 'yes' || myFavFoodLo === 'y'){
