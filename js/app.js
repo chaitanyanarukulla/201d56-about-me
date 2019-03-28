@@ -92,13 +92,18 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
   //Question 7
   var stateIlived = prompt(userName + ' Can you guess a state that I have lived in besides Washington').toUpperCase();
   var states = ['VARGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
-
+  var attempts = 0;
   for( var i = 0; i < states.length; i++){
     if (stateIlived === states[i]){
       alert('You know me very well. you gussed it right');
     }
-    else{
+    else if ( attempts < 4 ){
+      attempts++;
       prompt('Guess again');
+
+    }
+    else{
+      alert('You had 4 trys and you failed');
 
     }
   }
