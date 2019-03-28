@@ -1,7 +1,7 @@
 'use strict';
 //Getting User name
 function getToKnowMe() {/* function to ask questions when clicked on get to know me button on html */
-  var userName = prompt('What is your name');
+  var userName = getUserName();
   alert('Greetings ' + userName + ' Lets play a game get to know Me');
   // Question 1
   var points = 0;
@@ -167,3 +167,15 @@ function guessTheNumber() {
   }
 }
 
+//----
+//Funtion to get username and check for  null and empty string
+function getUserName(){
+  let userName = null;
+  do {
+    userName = prompt('What is your name?');
+    console.log('User entered: ' + userName + ' for name.');
+    if (userName) {break;}
+    alert('Please enter a name!');
+  } while (userName === null || userName === '');
+  return userName;
+}
