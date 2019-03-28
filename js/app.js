@@ -98,25 +98,23 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   //Question 7
   var stateIlived = prompt(userName + ' Can you guess a state that I have lived in besides Washington').toUpperCase();
-  var states = ['VARGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
+  var states = ['VIRGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
   var attempts = 0;
-  for( var i = 0; i < states.length; i++){
-    if (stateIlived === states[i]){
-      points++;
-      alert('You know me very well. you gussed it right' + points + ' correct out of 6');
-    }
-    else if ( attempts < 3 ){
-      attempts++;
-      prompt('Guess again');
-
-    }
-    else{
-      alert('You had 4 trys and you failed');
-      alert('You know me very well. you gussed ' + points + ' correct out of 6 get to know me questions');
-
-    }
+  console.log(stateIlived);
+  while (!states.includes(stateIlived) && (attempts < 3)){
+    attempts++;
+    stateIlived = prompt('Guess again');
+    console.log(stateIlived);
   }
+  if (states.includes(stateIlived)) {
+    points++;
+    alert('You know me very well. you gussed it right' + points + ' correct out of 6');
+  }
+  else{
+    alert('You had 4 trys and you failed');
+    alert('You know me very well. you gussed ' + points + ' correct out of 6 get to know me questions');
 
+  }
 }
 //Question 6  Guessing Game
 // random value generated
