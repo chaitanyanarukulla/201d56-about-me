@@ -1,7 +1,7 @@
 'use strict';
 //Getting User name
 function getToKnowMe() {/* function to ask questions when clicked on get to know me button on html */
-  var userName = prompt('What is your name');
+  var userName = getUserName();
   alert('Greetings ' + userName + ' Lets play a game get to know Me');
   // Question 1
   var points = 0;
@@ -98,25 +98,23 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   //Question 7
   var stateIlived = prompt(userName + ' Can you guess a state that I have lived in besides Washington').toUpperCase();
-  var states = ['VARGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
+  var states = ['VIRGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
   var attempts = 0;
-  for( var i = 0; i < states.length; i++){
-    if (stateIlived === states[i]){
-      points++;
-      alert('You know me very well. you gussed it right' + points + ' correct out of 6');
-    }
-    else if ( attempts < 3 ){
-      attempts++;
-      prompt('Guess again');
-
-    }
-    else{
-      alert('You had 4 trys and you failed');
-      alert('You know me very well. you gussed ' + points + ' correct out of 6 get to know me questions');
-
-    }
+  console.log(stateIlived);
+  while (!states.includes(stateIlived) && (attempts < 3)){
+    attempts++;
+    stateIlived = prompt('Guess again');
+    console.log(stateIlived);
   }
+  if (states.includes(stateIlived)) {
+    points++;
+    alert('You know me very well. you gussed it right' + points + ' correct out of 6');
+  }
+  else{
+    alert('You had 4 trys and you failed');
+    alert('You know me very well. you gussed ' + points + ' correct out of 6 get to know me questions');
 
+  }
 }
 //Question 6  Guessing Game
 // random value generated
@@ -133,18 +131,19 @@ document.getElementById('submitguess').onclick = function(){
   console.log('user guessednumber'+userGuessedNumber);
 
   while(guess < 4){
-    if(randomNumber === userGuessedNumber)
+    console.log('we are guessing: ' + guess);
+    if(randomNumber === parseInt(userGuessedNumber))
     {
-      prompt('CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN '+ guess + ' GUESS ');
+      alert('CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN '+ guess + ' GUESS ');
       break;
-    } else if(randomNumber < userGuessedNumber) {/* if guessed number is greater
+    } else if(randomNumber < parseInt(userGuessedNumber)) {/* if guessed number is greater
                         than actual number*/
       console.log('this is the random number',randomNumber);
-      prompt('OOPS SORRY!! TRY A SMALLER NUMBER');
+      userGuessedNumber = prompt('OOPS SORRY!! TRY A SMALLER NUMBER');
       guess++;
-    } else if(randomNumber > userGuessedNumber){ /* if guessed number is Smaller
+    } else if(randomNumber > parseInt(userGuessedNumber)){ /* if guessed number is Smaller
         than actual number*/
-      prompt('OOPS SORRY!! TRY A GREATER NUMBER');
+      userGuessedNumber = prompt('OOPS SORRY!! TRY A GREATER NUMBER');
       guess++;
     }
   }
@@ -166,3 +165,15 @@ function guessTheNumber() {
   }
 }
 
+//----
+//Funtion to get username and check for  null and empty string
+function getUserName(){
+  let userName = null;
+  do {
+    userName = prompt('What is your name?');
+    console.log('User entered: ' + userName + ' for name.');
+    if (userName) {break;}
+    alert('Please enter a name!');
+  } while (userName === null || userName === '');
+  return userName;
+}
