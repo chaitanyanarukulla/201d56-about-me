@@ -1,13 +1,16 @@
 'use strict';
-//Question 1
+//Getting User name
 function getToKnowMe() {/* function to ask questions when clicked on get to know me button on html */
   var userName = prompt('What is your name');
-
-  var myCity = prompt(userName + ' do you belive i am from Seattle');
+  alert('Greetings ' + userName + ' Lets play a game get to know Me');
+  // Question 1
+  var points = 0;
+  var myCity = prompt(userName + ' do you think I am from Seattle');
 
   if(myCity ==='yes' || myCity === 'Yes' || myCity === 'y' || myCity === 'Y' || myCity === 'YES'){/* checking user
     answers with if else statements */
-    alert('You gussed it right');
+    points++;
+    alert('You gussed it right! you got ' + points + ' correct out of 6');
     console.log('You gussed it right');
   }
   else if(myCity ==='no' || myCity === 'No'|| myCity === 'n' || myCity === 'N' || myCity === 'NO'){
@@ -24,7 +27,8 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   if(myPreJob ==='yes' || myPreJob === 'Yes' || myPreJob=== 'y' || myPreJob === 'Y'){/* checking user
     answers with if else statements */
-    alert('You got it right , I was a aircraft machanic in the Navy');
+    points++;
+    alert('You got it right , I was a aircraft machanic in the Navy '+ points + ' correct out of 6');
     console.log('You got it right , I was a aircraft machanic in the Navy');
   }
   else if(myPreJob ==='no' || myPreJob === 'No'|| myPreJob === 'n' || myPreJob === 'N'){
@@ -41,8 +45,9 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   if(mySport==='YES' || mySport === 'Y'){/* checking user
     answers with if else statements */
-    alert('You gussed it right');
-    console.log('You gussed it right');
+    points++;
+    alert('You gussed it right '+ points + ' correct out of 6');
+    console.log('You gussed it right' );
   }
   else if(mySport ==='NO' || mySport === 'N'){
     alert('You gussed it wrong');
@@ -58,8 +63,9 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   if(myVetran === 'yes' || myVetran === 'y'){ /* checking user
     answers with if else statements */
-    alert('You gussed it right');
-    console.log('You gussed it right');
+    points++;
+    alert('You gussed it right '+ points + ' correct out of 6');
+    console.log('You gussed it right' );
   }
   else if(myVetran ==='no' || myVetran === 'n'){
     alert('You gussed it wrong');
@@ -77,8 +83,9 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   if(myFavFood === 'yes' || myFavFood === 'y'){/* checking user
     answers with if else statements */
-    alert('You gussed it right I love it');
-    console.log('You gussed it right I love it');
+    points++;
+    alert('You gussed it right I speak and write 5 languages '+ points + ' correct out of 6');
+    console.log('You gussed it right ' );
   }
   else if(myFavFood === 'no' || myFavFood === 'n'){
     alert('You gussed it wrong');
@@ -95,15 +102,17 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
   var attempts = 0;
   for( var i = 0; i < states.length; i++){
     if (stateIlived === states[i]){
-      alert('You know me very well. you gussed it right');
+      points++;
+      alert('You know me very well. you gussed it right' + points + ' correct out of 6');
     }
-    else if ( attempts < 4 ){
+    else if ( attempts < 3 ){
       attempts++;
       prompt('Guess again');
 
     }
     else{
       alert('You had 4 trys and you failed');
+      alert('You know me very well. you gussed ' + points + ' correct out of 6 get to know me questions');
 
     }
   }
