@@ -91,7 +91,7 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
 
   //Question 7
   var stateIlived = prompt(userName + ' Can you guess a state that I have lived in besides Washington').toUpperCase();
-  var states = [Varginia,California,Nevada,Oregon,Florida,Idaho,Colorado];
+  var states = [VARGINIA,CALIFORNIA,NEVADA,OREGON,IDAHO,COLORADO];
 
   for( var i = 0; i < states.length; i++){
     if (stateIlived === i){
@@ -137,8 +137,7 @@ document.getElementById('submitguess').onclick = function(){
 
 
   if(guess === 4){/* if number of tries is = 4 */
-    alert
-    ('you failed to guess my number in 4 tryes');
+    alert('you failed to guess my number in 4 tryes');
   }
 
 };

@@ -48,6 +48,7 @@ User Stories
 ## Contributing
 
 Most of my HTML and CSS was downloded from http://getskeleton.com/ for basic markup
+My guessing game was  written with help from https://www.geeksforgeeks.org/number-guessing-game-using-javascript/
 
 Codefellows T.A's
  
