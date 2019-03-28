@@ -133,18 +133,19 @@ document.getElementById('submitguess').onclick = function(){
   console.log('user guessednumber'+userGuessedNumber);
 
   while(guess < 4){
-    if(randomNumber === userGuessedNumber)
+    console.log('we are guessing: ' + guess);
+    if(randomNumber === parseInt(userGuessedNumber))
     {
-      prompt('CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN '+ guess + ' GUESS ');
+      alert('CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN '+ guess + ' GUESS ');
       break;
-    } else if(randomNumber < userGuessedNumber) {/* if guessed number is greater
+    } else if(randomNumber < parseInt(userGuessedNumber)) {/* if guessed number is greater
                         than actual number*/
       console.log('this is the random number',randomNumber);
-      prompt('OOPS SORRY!! TRY A SMALLER NUMBER');
+      userGuessedNumber = prompt('OOPS SORRY!! TRY A SMALLER NUMBER');
       guess++;
-    } else if(randomNumber > userGuessedNumber){ /* if guessed number is Smaller
+    } else if(randomNumber > parseInt(userGuessedNumber)){ /* if guessed number is Smaller
         than actual number*/
-      prompt('OOPS SORRY!! TRY A GREATER NUMBER');
+      userGuessedNumber = prompt('OOPS SORRY!! TRY A GREATER NUMBER');
       guess++;
     }
   }
