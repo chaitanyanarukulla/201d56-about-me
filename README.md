@@ -47,7 +47,10 @@ User Stories
 
 ## Contributing
 
+Stephen Chu - lab 4  pair proggraming partner
+#
 Most of my HTML and CSS was downloded from http://getskeleton.com/ for basic markup
+#
 My guessing game was  written with help from https://www.geeksforgeeks.org/number-guessing-game-using-javascript/
 
 Codefellows T.A's
@@ -56,6 +59,7 @@ Codefellows T.A's
 ## Authors
 
 * **Chai.Narukulla** - *Initial work* - (https://github.com/chaitanyanarukulla@gmail.com)
+
 
 
 ## License
