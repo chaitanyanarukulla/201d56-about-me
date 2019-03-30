@@ -3,8 +3,11 @@
 This is a 201 project <About me> bult using HTML,CSS and JavaScript
 
 ## Getting Started
-git clone this progect from github 
+clone this project from github 
 https://github.com/chaitanyanarukulla/201d56-about-me
+
+## Deployed 
+https://chaitanyanarukulla.github.io/201d56-about-me/
 
 ## User Stories lab 1
 
