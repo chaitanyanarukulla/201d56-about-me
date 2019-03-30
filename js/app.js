@@ -99,7 +99,7 @@ function getToKnowMe() {/* function to ask questions when clicked on get to know
     alert('You have to answer with yes and no');
   }
   //Question 6
-  var stateIlived = prompt(userName + ' Can you guess a state that I have lived in besides Washington').toUpperCase();
+  var stateIlived = prompt(userName + ' can you guess a state that I have lived in besides Washington').toUpperCase();
   var states = ['VIRGINIA','CALIFORNIA','NEVADA','OREGON','IDAHO','COLORADO'];
   var attempts = 0;
   console.log(stateIlived);
