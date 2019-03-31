@@ -409,7 +409,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #0e0e02; }
 a:hover {
   color: #0FA0CE; }
 
@@ -661,3 +661,24 @@ hr {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+nav {	margin:auto;	max-width: auto;	}
+.navigation { list-style: none; text-align: center; }
+  .navigation li:first-child { display: inline-block;}
+  .navigation li { display: none;}
+  .navigation a {	display: inline-block;	color: #33C3F0; margin: .5em;padding: .5em;	text-align: center;	text-decoration: none;}
+  .navigation a:hover {	color: #33C3F0; background-color: #fff; font-weight: 700;	}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+	.responsive li { display: block; }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 45em) {
+  .navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+	.navigation li a { color: #0e0e02;}
+}

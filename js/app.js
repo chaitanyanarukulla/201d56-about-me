@@ -146,3 +146,6 @@ function guessTheNumber() {
     alert('you failed to guess my number in 4 tryes');
   }
 }
+function toggleMenu() {
+  document.getElementsByClassName('navigation')[0].classList.toggle('responsive');
+}
