@@ -1,178 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>About-Me</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+      <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta charset="utf-8">
+      <title>About-Me</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="image/favicon.png">
-
-</head>
+      <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<body>
- <!-- Primary Page Layout–-->
- <nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </div>
-  </nav>
- <header>
-   <div class="container">
-     <div class="row">    
-         <div class="twelve columns">
-           <h4>Hello! I am Chai.Narukulla and am 34 years old software developer. 
-               I live in Seattle, Washington with my two dogs Angel and Winne.</h4>
-            <h2>- Nothing is impossible, the word itself says “I’m possible”! -- Audrey Hepburn -</h2>
-          </div>
-      </div>
+      <!-- CSS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
 
-      <a onclick="getToKnowMe()" class="btn">Get Know Me Game</a> 
-      <a onclick="guessTheNumber()" class="btn">Guess My Number</a> 
-      <div id="guessGameBlock">
-          <h3 style="text-align:center">Guess The Number</h3> 
-     </div>
+      <!-- Favicon
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link rel="icon" type="image/png" href="image/favicon.png">
 
-      <section class="services">
-        <div class="row">
-          <div class="twelve columns"></div>
-        </div>
+    </head>
 
-        <div class="row">
-          <div class="one-half column">
-            <ul style="list-style: none;">
-              <h4>Accomplishments</h4>
-              <span class="fa fa-picture-o"></span>
-              <li>Graduated high school with Honors</li>
-              <li>Associates of the Arts from Seattle Center College.</li>
-              <li>Graduated from University of Washington </li>
-              <li>Graduated from Codefellows </li>
-            </ul>
-          </div>
-           <div class="one-half column">
-             <ul style="list-style: none;">
-              <h4>Work Experience</h4>
-              <li>Multi unit operation manager at Seatac Airport</li>
-              <li>Event manager at Washington State convention Center</li>
-              <li>Casino Pit Boss</li>
-              <li>U.S.Navy</li>
-              <span class="fa fa-leaf"></span>
-            </ul>
-          </div>
-        </div><!--end of .row-->
-      </section>
+    <body>
+<!-- Primary Page Layout–-->
+        <header>
+        </header>
+        <section class="about">
+            <div class="container">
+              <div class="row">    
+                  <div class="twelve columns">
+                    <h2>Nothing is impossible, the word itself says </br>“I’m possible”!</br> - Audrey Hepburn -</h2>
+                    <h4>Hello! I am Chai.Narukulla.</br> Navy veteran and Software developer at Amazon. </br> I live in my hometown Seattle, Washington.</h4>
+                    </div>
+                </div>
+                <div class="row"> 
+                <a onclick="getToKnowMe()" class="btn inline-block">Get Know Me Game</a> 
+                <a onclick="guessTheNumber()" class="btn inline-block">Guess My Number</a> 
+                </div>
+            </div>
+        </section>
 
-    </div><!--end of .container-->
-</header>
-  
-  <!--ABOUT-->
-  <main>
-      <section class="about">
-        <div class="container">
-            <div class="row">
+ <!-- 3 sections  -->
+        <section class="about">
+           <div class="row">
+               <div class="one-third column">
+                 <ul style="list-style: none;">
+                   <h4>Projects</h4>
+                   <li>Code of conduct Award.</li>
+                   <li>Enlisted Aviation Warfare Specialist </li>
+                   <li>Manager of the year </li>
+                   <li>Graduated high school with Honors</li>
+                 </ul>
+               </div>
+               <div class="one-third column">
+                 <ul style="list-style: none;">
+                   <h4>Work Experience</h4>
+                   <li>Operation manager at Seatac Airport</li>
+                   <li>Event manager </li>
+                   <li>Casino Pit Boss</li>
+                   <li>U.S.Navy</li>
+                 </ul>
+               </div>
+               <div class="one-third column">
+                 <ul style="list-style: none;">
+                   <h4>Accomplishments</h4>
+                   <li>Code of conduct Award.</li>
+                   <li>Enlisted Aviation Warfare Specialist </li>
+                   <li>Manager of the year </li>
+                   <li>Graduated high school with Honors</li>
+                 </ul>
+               </div>
+           </div>
+
+  <!-- Top 10 things section -->
+         </section>
+         <section class="about">
+           <div class="row">  
+               <div class="twelve columns">
+                     <ol style="list-style: none;">
+                         <h2 style="text-align:center">My Top Ten Places to visit while in Seattle</h2>
+                         <li>Kerry park</li>
+                         <li>The Museum of flight</li>
+                         <li>ChinaTown</li>
+                         <li>Mt Rainer</li>
+                         <li>Museum of Pop culture</li>
+                         <li>Arboretum park</li>
+                         <li>Seattle public Library</li>
+                         <li>Fremont Mischief Distillery</li>
+                         <li>Union Station</li>
+                         <li>North Bend</li>
+                     </ol>
+               </div>
+           </div>
+         </section>
+
+  <!-- Who am i Section -->
+          <div class="about">
               <div class="twelve columns">
                 <h4>Who am I</h4>
                 <img src="./image/aboutme.jpg">
-                </div>
+                <p>I am a Navy Vetern and software developer sipretium quis, sem. Nulla consequat massa quis enim.Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
               </div>
-        </div><!--end of .row-->
-
-            <div class="row bottom">
-              <div class="two-thirds column">
-                <p>I am a Navy Vetern and software developer
-                  sipretium quis, sem. Nulla consequat massa quis enim.</p>
-                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-              </div>
-              <div class="one-third column">
-                <h4>Degrees</h4>
-            
-                <p>Advance fullstack development from Codefellows</p>
-                <p>Applied Science from Seattle Central collage </p>
-                <p>Avation machanic fron Naval Air School</p>
-          
-                <h4>Honors</h4>
-                <p>1st place in Seattle Hackthon</p>
-                <p>Graduated  with dean list from Seattle center collage</p>
-                <p>Graduated with honors from garfield high school</p>
-                <a href="https://www.linkedin.com/in/chaitanya-narukulla/" class="btn block">CV</a>
-              </div>
-            </div><!--end of .row-->
-
-
-          <div class="row">
-            <ol style="list-style: none;">
-              <h3 style="text-align:center">My Top Ten Places to visit while in Seattle</h3>
-              <li>Kerry park</li>
-              <li>The Museum of flight</li>
-              <li>ChinaTown</li>
-              <li>Mt Rainer</li>
-              <li>Museum of Pop culture</li>
-              <li>Arboretum park</li>
-              <li>Seattle public Library</li>
-              <li>Fremont Mischief Distillery</li>
-              <li>Union Station</li>
-              <li>North Bend</li>
-            </ol>
           </div>
 
-            <div class="row">
-              <div class="twelve columns">
-                <h4 class="center">Interested in samples of my work?</h4>
-              </div>
-            </div><!--end of .row-->
+  <!-- bottom section -->
+          <div class="row" >
+                <div class="container">
+                  <div class="one-half column">
+                    <section class="about">
+                      <h4>Degrees</h4>
+                      <p>Advance fullstack development from Codefellows</p>
+                      <p>Applied Science from Seattle Central collage </p>
+                      <p>Avation machanic from Naval Air School</p>
+                    </section>
+                  </div>
+                  <div class="one-half column">
+                    <section class="about">
+                      <h4>Honors</h4>
+                      <p>1st place in Seattle Hackthon</p>
+                      <p>Graduated  with dean list from Seattle center collage</p>
+                      <p>Graduated with honors from garfield high school</p>
+                    </section>
+                  </div>
+                </div>
+          </div>
+  <!-- Fotter                        -->
+      <footer>    
+          <section class="contact">
+            <h4 class="center">Interested in samples of my work?</h4>
+            <a href="https://www.linkedin.com/in/chaitanya-narukulla/" class="btn inline-block">Linked-In</a>
+            <a href="https://github.com/chaitanyanarukulla" class="btn inline-block">Github</a>
+            </section>
+      </footer>  
+      <script src="js/app.js"></script>
+    </body>
+  </html>
+    
+              
+                            
+                                
+                                 
+      
+      
+        
+        
+            
+
+                  
+                
+
+                      
+                      
+                          
+                  
 
 
-            <div class="row">
-              <div class="twelve columns">
-                <a href="https://github.com/chaitanyanarukulla" class="btn block">Github</a>
-              </div>
-            </div><!--end of .row-->
+                
+                   
 
-        <!--end of .container-->
-      </section>
-  </main>
-  <script src="js/app.js"></script>
-  </body>
-</html>
+                          
+            
   
