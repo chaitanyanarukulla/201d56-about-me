@@ -146,4 +146,3 @@ function guessTheNumber() {
     alert('you failed to guess my number in 4 tryes');
   }
 }
-
