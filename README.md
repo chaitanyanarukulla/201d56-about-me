@@ -6,7 +6,7 @@ This is a 201 project <About me> bult using HTML,CSS and JavaScript
 clone this project from github 
 https://github.com/chaitanyanarukulla/201d56-about-me
 
-## Deployed 
+## Deployed on Gh-pages
 https://chaitanyanarukulla.github.io/201d56-about-me/
 
 ## User Stories lab 1
@@ -52,7 +52,7 @@ User Stories
 
 Stephen Chu - lab 4  pair proggraming partner
 #
-Most of my HTML and CSS was downloded from http://getskeleton.com/ for basic markup
+HTML and CSS was marked up using skeleton wireframe  http://getskeleton.com/ 
 #
 My guessing game was  written with help from https://www.geeksforgeeks.org/number-guessing-game-using-javascript/
 
@@ -72,5 +72,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * http://getskeleton.com/ for opensource free html and css div templets
+* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp used fro my Social media Buttons
+* https://stackoverflow.com/ for J.Script Help
+* https://codepen.io/jackfitzgibbon/pen/BHxoa/ for Navbar help
 
 * Hat tip to anyone whose code was used
