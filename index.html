@@ -28,29 +28,43 @@
 
 <body>
  <!-- Primary Page Layout–-->
-
-
-<header>
-    <div class="container">
+ <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
       
-      <div class="row">
-        <div class="twelve columns">
-          <nav>
-            <ul>
-              <li><a href="#">About-ME</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Tool</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>  
-        </div> 
-      </div>
-  
-      <div class="row">    
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </div>
+  </nav>
+ <header>
+   <div class="container">
+     <div class="row">    
          <div class="twelve columns">
+           <h4>Hello! I am Chai.Narukulla and am 34 years old software developer. 
+               I live in Seattle, Washington with my two dogs Angel and Winne.</h4>
             <h2>- Nothing is impossible, the word itself says “I’m possible”! -- Audrey Hepburn -</h2>
-            <h4>Hello! I am Chai.Narukulla and am 34 years old software developer. 
-                I live in Seattle, Washington with my two dogs Angel and Winne.</h4>
           </div>
       </div>
 
